@@ -365,7 +365,7 @@ cat urllist.txt | tr -d ' ' | tr -s '.'
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
-![Alt text](IMGS/S47.png)
+
 
 mkdir backupdir
  
@@ -375,21 +375,19 @@ cd backupdir
  
 tar -tvf backup.tar
 ## OUTPUT
-![Alt text](IMGS/S48.png)
+
 
 tar -xvf backup.tar
 ## OUTPUT
-![Alt text](IMGS/S49.png)
 
 gzip backup.tar
 
 ls .gz
 ## OUTPUT
- ![Alt text](IMGS/S50.png)
-
+ 
 gunzip backup.tar.gz
 ## OUTPUT
-![Alt text](IMGS/S51.png)
+
  
 # Shell Script
 ```
@@ -399,7 +397,7 @@ echo 'echo Hello World‘; exit 0 >> my-script.sh
 chmod 755 my-script.sh
 ./my-script.sh
 ## OUTPUT
-![Alt text](IMGS/S52.png)
+
  
 cat << stop > herecheck.txt
 ```
@@ -411,7 +409,7 @@ stop
 
 cat herecheck.txt
 ## OUTPUT
-![Alt text](IMGS/S53.png)
+
 
 cat < scriptest.sh 
 ```bash
@@ -428,7 +426,7 @@ echo 'The $$ is ' $$
 ps
 ^d
  ```
-![Alt text](image.png)
+
 cat scriptest.sh 
 ```bash
 \#!/bin/sh
@@ -449,29 +447,25 @@ chmod 777 scriptest.sh
 ./scriptest.sh 1 2 3
 
 ## OUTPUT
-![Alt text](IMGS/S54.png)
+
  
 ls file1
 ## OUTPUT
-![Alt text](IMGS/S55.png)
 
 echo $?
 ## OUTPUT 
-![Alt text](IMGS/S56.png)
-
 ./one
 bash: ./one: Permission denied
  
 echo $?
 ## OUTPUT 
- ![Alt text](IMGS/S57.png)
-
+ 
 abcd
  
 echo $?
  ## OUTPUT
 
-![Alt text](IMGS/S58.png)
+
  
 # mis-using string comparisons
 
@@ -503,13 +497,13 @@ fi
 ```
 ##OUTPUT
 
-![Alt text](IMGS/S59.png)
+
 
 chmod 755 strcomp.sh
  
 ./strcomp.sh 
 ## OUTPUT
-![Alt text](IMGS/S60.png)
+
 
 # check file ownership
 cat < psswdperm.sh 
@@ -536,7 +530,7 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
-![Alt text](IMGS/S61.png)
+
 # check if with file location
 cat>ifnested.sh 
 ```bash
@@ -582,7 +576,7 @@ fi
 
 ./ifnested.sh 
 ## OUTPUT
-![Alt text](IMGS/S62.png)
+
 
 
 # using numeric test comparisons
@@ -626,7 +620,7 @@ $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
 ##OUTPUT
-![Alt text](IMGS/S63.png)
+
 # check if a file
 cat > ifnested.sh 
 ```bash
@@ -675,7 +669,7 @@ $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
 ##OUTPUT
-![Alt text](IMGS/S64.png)
+
 # looking for a possible value using elif
 cat elifcheck.sh 
 ```bash
@@ -703,7 +697,7 @@ $ chmod 755 elifcheck.sh
  
 $ ./elifcheck.sh 
 ## OUTPUT
-![Alt text](IMGS/S65.png)
+
 
 # testing compound comparisons
 cat> ifcompound.sh 
@@ -719,7 +713,7 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
-![Alt text](IMGS/S66.png)
+
 # using the case command
 cat >casecheck.sh 
 ```bash
@@ -830,9 +824,6 @@ done
 $ chmod 755 forin1.sh
 
 ## OUTPUT
-
-![Alt text](IMGS/S67.png)
-
 cat forinfile.sh 
 ```bash
 #!/bin/bash
@@ -854,7 +845,7 @@ Bhadrachalam
 Khammam
 
 ## OUTPUT
-![Alt text](IMGS/S68.png)
+
 
 cat forctype.sh 
 ```bash
@@ -868,7 +859,6 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype.sh 
 ## OUTPUT
-![Alt text](IMGS/S69.png)
 
 cat forctype1.sh 
 ```bash
@@ -882,7 +872,6 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype1.sh 
 ## OUTPUT
-![Alt text](IMGS/S70.png)
 
 cat fornested1.sh 
 ```bash
@@ -901,7 +890,7 @@ $ chmod 755 fornested1.sh
  
 $ ./fornested1.sh 
  ## OUTPUT
-![Alt text](IMGS/S71.png)
+
  
 cat forbreak.sh 
 ```bash
@@ -918,7 +907,6 @@ done
 echo "The for loop is completed“
 ```
 ## OUTPUT
-![Alt text](IMGS/S72.png)
 
 $ chmod 755 forbreak.sh
  
@@ -944,8 +932,7 @@ $ chmod 755 forcontinue.sh
  
 $ ./forcontinue.sh 
 ## OUTPUT
- ![Alt text](IMGS/S73.png)
-
+ 
 cat exread.sh 
 ```bash
 #!/bin/bash
@@ -959,7 +946,7 @@ $ chmod 755 exread.sh
  
 $ ./exread.sh 
 ## OUTPUT
-![Alt text](IMGS/S74.png)
+
 
  cat exread1.sh
 ```bash
@@ -971,7 +958,7 @@ echo "Hello $name, welcome to my program. “
 $ chmod 755 exread1.sh 
 
 ## OUTPUT
-![Alt text](IMGS/S75.png)
+
 
 
 $ ./exread1.sh 
@@ -992,8 +979,6 @@ echo "Usage: badtest1 a b"
 fi
 ```
 ## OUTPUT
-![Alt text](IMGS/S76.png)
-
  ./funcex.sh 
 
  
@@ -1011,8 +996,6 @@ done
 $ chmod 777 argshift.sh
 
 ## OUTPUT
-![Alt text](IMGS/S77.png)
-
 $ ./argshift.sh 1 2 3
  
  cat argshift1.sh
@@ -1030,8 +1013,6 @@ done
 ```
 $ chmod 777 argshift.sh
 ## OUTPUT
-![Alt text](IMGS/S78.png)
-
 $ ./argshift.sh 1 2 3
  
 cat argshift.sh
@@ -1045,9 +1026,6 @@ done
 set +x
 ```
 ## OUTPUT
-
-![Alt text](IMGS/S79.png)
-
  ./argshift.sh 1 2 3
  
  
@@ -1080,8 +1058,7 @@ ubcdfghj
 ```
 awk -f nc.awk data.dat
 ## OUTPUT 
- ![Alt text](IMGS/S80.png)
-
+ 
 cat > palindrome.sh
 ```bash
 #num=545
@@ -1108,7 +1085,7 @@ else
 fi
 ```
 ## OUTPUT 
-![Alt text](IMGS/S81.png)
+
 
 # RESULT:
 The Commands are executed successfully.
